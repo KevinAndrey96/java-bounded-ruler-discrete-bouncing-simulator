@@ -1,0 +1,29 @@
+# Build output
+target/
+build/
+out/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE metadata
+nbproject/
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Runtime artifacts
+output/
+*.log
+trajectory*.csv
+__pycache__/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

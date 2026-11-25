@@ -1,0 +1,28 @@
+x-simulator: &simulator
+  build: .
+  image: bounded-ruler-simulator:latest
+
+services:
+  simulator:
+    <<: *simulator
+    container_name: bounded-ruler-simulator
+    command: ["--length", "5", "--start", "4", "--direction", "1", "--steps", "4",
+              "--trace", "--export-csv", "/app/output/trajectory.csv"]
+    volumes:
+      - trajectory-data:/app/output
+
+  benchmark:
+    <<: *simulator
+    container_name: bounded-ruler-benchmark
+    command: ["--length", "1000", "--start", "999", "--direction", "-1", "--steps", "1000000000",
+              "--benchmark", "--iterations", "3"]
+
+  scenarios:
+    <<: *simulator
+    container_name: bounded-ruler-scenarios
+    command: ["--scenarios", "/app/scenarios/reference-scenarios.csv"]
+    volumes:
+      - ./scenarios/reference-scenarios.csv:/app/scenarios/reference-scenarios.csv:ro
+
+volumes:
+  trajectory-data:
