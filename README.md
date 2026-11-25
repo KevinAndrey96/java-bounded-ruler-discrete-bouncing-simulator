@@ -2,7 +2,7 @@
 ### Discrete Periodic Motion with Elastic Reflection over $[0, N]$
 **O(M) Step-by-Step Simulation versus O(1) Closed-Form Triangular Wave Solution in Java 8 - 21**
 
-[![CI](https://github.com/KevinAndrey96/bounded-ruler-discrete-bouncing-simulator-java/actions/workflows/ci.yml/badge.svg)](https://github.com/KevinAndrey96/bounded-ruler-discrete-bouncing-simulator-java/actions/workflows/ci.yml)
+[![CI](https://github.com/KevinAndrey96/java-bounded-ruler-discrete-bouncing-simulator/actions/workflows/ci.yml/badge.svg)](https://github.com/KevinAndrey96/java-bounded-ruler-discrete-bouncing-simulator/actions/workflows/ci.yml)
 [![Java](https://img.shields.io/badge/Java-8%20%7C%2011%20%7C%2017%20%7C%2021-ED8B00?logo=openjdk)](https://openjdk.org/)
 [![Maven](https://img.shields.io/badge/Maven-3.9-C71A36?logo=apachemaven)](https://maven.apache.org/)
 [![JUnit 5](https://img.shields.io/badge/JUnit-5.10%20%C2%B7%20119%20tests-25A162?logo=junit5)](https://junit.org/junit5/)

@@ -10,7 +10,7 @@
 
     <name>Bounded Ruler Discrete Bouncing Simulator</name>
     <description>Discrete periodic motion simulator with elastic reflection over the closed interval [0, N]: O(M) step-by-step simulation, O(min(M, 2N)) periodic reduction and O(1) closed-form triangular wave solver.</description>
-    <url>https://github.com/KevinAndrey96/bounded-ruler-discrete-bouncing-simulator-java</url>
+    <url>https://github.com/KevinAndrey96/java-bounded-ruler-discrete-bouncing-simulator</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
