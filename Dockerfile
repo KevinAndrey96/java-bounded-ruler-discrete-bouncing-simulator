@@ -4,7 +4,7 @@ FROM maven:3.9-eclipse-temurin-21 AS builder
 WORKDIR /build
 
 COPY pom.xml .
-RUN mvn -B -q dependency:go-offline
+RUN mvn -B -q org.apache.maven.plugins:maven-dependency-plugin:3.6.1:go-offline
 
 COPY src ./src
 COPY scenarios ./scenarios
